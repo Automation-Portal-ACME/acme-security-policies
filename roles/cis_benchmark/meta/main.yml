@@ -1,0 +1,6 @@
+galaxy_info:
+  role_name: cis_benchmark
+  namespace: acme
+  description: "cis_benchmark role"
+  min_ansible_version: '2.14'
+dependencies: []
