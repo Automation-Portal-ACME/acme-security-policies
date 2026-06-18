@@ -1,0 +1,13 @@
+---
+- name: Ensure permissions on /etc/passwd are configured
+  ansible.builtin.file:
+    path: /etc/passwd
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: Ensure password expiration is 365 days or less
+  ansible.builtin.lineinfile:
+    path: /etc/login.defs
+    regexp: '^PASS_MAX_DAYS'
+    line: 'PASS_MAX_DAYS   365'
