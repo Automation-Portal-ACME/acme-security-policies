@@ -1,0 +1,13 @@
+namespace: acme
+name: security_policies
+version: 1.0.0
+readme: README.md
+authors:
+  - ACME Corp Platform Team
+description: "ACME Corp security compliance policies, CIS benchmarks, and certificate management roles"
+tags:
+  - security
+  - compliance
+  - hardening
+dependencies: {}
+repository: https://github.com/Automation-Portal-ACME/acme-security-policies
